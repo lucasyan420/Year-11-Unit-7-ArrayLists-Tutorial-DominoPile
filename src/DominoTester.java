@@ -164,6 +164,9 @@ public class DominoTester {
         setUp();
         domino.setTop(4);
         domino.setBottom(2);
+
+        System.out.println("domino1" + domino.toString());
+        System.out.println("domino2" + otherDomino.toString());
         assertEquals("Ensure that your compareTo method in the Domino class has been implemented correctly!", -1, domino.compareTo(otherDomino));
         tearDown();
     }
